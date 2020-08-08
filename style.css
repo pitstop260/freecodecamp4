@@ -1,0 +1,84 @@
+nav {
+    display: block;
+}
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    overflow-y: auto;
+}
+main {
+    display: block;
+}
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+#navbar header {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.75em;
+}
+#navbar a{
+    color: #404040;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-left: 40px;
+    line-height: 33.5px;
+    cursor: pointer;
+}
+#nav-link {
+    direction: ltr;
+}
+#navbar::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+#navbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+    
+#navbar::-webkit-scrollbar-thumb {
+    background-color: #D0D0D0;
+    border-right: none;
+    border-left: none;
+}
+
+#navbar::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 0px; 
+}
+
+#navbar::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 60px;
+}
+code {
+    display: block;
+    background-color: #f7f7f7;
+    padding: 20px;
+    color: #404040;
+}
+.main-section header {
+    font-size: 1.5em;
+    font-family: 'Roboto Mono', monospace;
+}
+.main-section > ul {
+    color: #404040;
+}
+.main-section > p {
+    color: #404040;
+}
+.main-section > li {
+    color: #404040;
+}
+.main-section > article {
+    color: #404040;
+}
