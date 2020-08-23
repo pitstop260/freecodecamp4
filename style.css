@@ -1,84 +1,64 @@
-nav {
-    display: block;
+* {
+    scroll-behavior: smooth;
+}
+#flexbox {
+    display: flex;
 }
 #navbar {
     position: fixed;
-    min-width: 290px;
-    top: 0px;
-    left: 0px;
-    width: 300px;
+    top: 0;
+    width: 250px;
     height: 100%;
-    border-right: solid;
-    border-color: rgba(0, 22, 22, 0.4);
-    overflow-y: auto;
+    overflow-y: scroll;
 }
-main {
-    display: block;
+#navbar > div {
+    padding: 10px 0;
+}
+#navbar > div > a {
+    text-decoration: none;
+    color: rgb(90, 90, 90);
 }
 #main-doc {
-    position: absolute;
-    margin-left: 310px;
-    padding: 20px;
-    margin-bottom: 110px;
+    position: fixed;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 280px;
+    overflow-y: scroll;
 }
-#navbar header {
-    padding: 10px;
-    text-align: center;
-    font-size: 1.75em;
-}
-#navbar a{
-    color: #404040;
-    text-decoration: none;
-    font-size: 1.1em;
-    margin-left: 40px;
-    line-height: 33.5px;
-    cursor: pointer;
-}
-#nav-link {
-    direction: ltr;
-}
-#navbar::-webkit-scrollbar {
-    display: block;
-    width: 10px;
-}
-#navbar::-webkit-scrollbar-track {
-    background: transparent;
-}
-    
-#navbar::-webkit-scrollbar-thumb {
-    background-color: #D0D0D0;
-    border-right: none;
-    border-left: none;
-}
-
-#navbar::-webkit-scrollbar-track-piece:end {
-    background: transparent;
-    margin-bottom: 0px; 
-}
-
-#navbar::-webkit-scrollbar-track-piece:start {
-    background: transparent;
-    margin-top: 60px;
+header {
+    font-size: 1.5rem;
 }
 code {
     display: block;
-    background-color: #f7f7f7;
-    padding: 20px;
-    color: #404040;
+    background-color: lightblue;
 }
-.main-section header {
-    font-size: 1.5em;
-    font-family: 'Roboto Mono', monospace;
+@media (max-width: 605px){
+    #navbar {
+        position: fixed;
+        top: 0;
+        width: 160px;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    #main-doc {
+        position: fixed;
+        max-width: 100%;
+        height: 100%;
+        top: 0;
+        left: 170px;
+        overflow-y: scroll;
+    }
 }
-.main-section > ul {
-    color: #404040;
-}
-.main-section > p {
-    color: #404040;
-}
-.main-section > li {
-    color: #404040;
-}
-.main-section > article {
-    color: #404040;
+@media (max-width: 480px) {
+    #main-doc {
+        font-size: 0.9rem;
+        max-width: 220px;
+        overflow-x: hidden;
+    }
+    header {
+        width: 130px;
+        font-size: 1.1rem;
+    }
 }
